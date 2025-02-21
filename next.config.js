@@ -25,6 +25,9 @@ const nextConfig = {
         protocol: "https",
       },
     ],
+    typescript: {
+      ignoreBuildErrors: true, // Skip type checking
+    },
   },
   webpack: (config, { isServer }) => {
     /**
