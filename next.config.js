@@ -1,3 +1,4 @@
+import path from "node:path";
 import withBundleAnalyzer from "@next/bundle-analyzer";
 import { withSentryConfig } from "@sentry/nextjs";
 
@@ -35,6 +36,7 @@ const nextConfig = {
      * Module parse failed: Unexpected character '�' (1:0)" error
      */
     config.resolve.alias.canvas = false;
+    config.resolve.alias["@"] = path.resolve(__dirname, "src");
 
     if (isServer) {
       config.ignoreWarnings = [{ module: /opentelemetry/ }];
