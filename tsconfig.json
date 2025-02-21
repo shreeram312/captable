@@ -27,10 +27,10 @@
     /* Path Aliases */
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"],
-      "@/prisma/*": ["./prisma/*"],
-      "@/env": ["./src/env"],
-      "@/server/*": ["./src/server/*"]
+      "@/*": ["src/*"],
+      "@/env": ["src/env"],
+      "@/server/*": ["src/server/*"],
+      "@/prisma/*": ["prisma/*"]
     }
   },
   "include": [
