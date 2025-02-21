@@ -29,8 +29,8 @@
     "paths": {
       "@/*": ["./src/*"],
       "@/prisma/*": ["./prisma/*"],
-      "@/server/*": ["./src/server/*"],
-      "@/env": ["./src/*"]
+      "@/env": ["./src/env"],
+      "@/server/*": ["./src/server/*"]
     }
   },
   "include": [
